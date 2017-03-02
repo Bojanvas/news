@@ -19,17 +19,20 @@
                 <i class="fa fa-globe" aria-hidden="true"></i> News | Feed
             </div>
             <div class= 'bor' >
-                <ul class= 'menu'><li><a href="/world"> World</a></li>
+                <ul class= 'menu'><li><a href="/"> World</a></li>
                 <span class='border'></span>
-                <li><a href="/europe">Europe</a></li>
+                <li><a href="/tehno">Technology</a></li>
                 <span class='border'></span>
-                <li><a href="/us">U.S</a></li>
+                <li><a href="/earth">Earth</a></li>
                 <span class='border'></span>
                 <li><a href="/sport">Sport</a></li>
                 <span class='border'></span>
-
-                <li><a href="/login"> Login</a></li>
+                {{#if session}}
+                <li><a href="/logout"> Logout</a></li>
+                {{else}}
+                 <li><a href="/login"> Login</a></li>
                 <span class='border'></span><li><a href="/regis">Register</a></li></ul>
+                {{/if}}
             </div>
             </div>
         </header>
